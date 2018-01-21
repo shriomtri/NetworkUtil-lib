@@ -41,6 +41,7 @@ STEP 2. Add the dependency (App Level)
 
 USAGE: 
   When ever you make the call to NetworkUtil class try to make it off the main theread.
+  TO GET THE RESULT FROM URL CALL THE BELOW LINE IN "doInBackground()" in case if you are using AsyncTask.
   
   
       String resultData = NetworkUtil.makeServiceCall(myUrl);
