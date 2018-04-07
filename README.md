@@ -1,17 +1,17 @@
 # NetworkUtil-lib
 
 NetworkUilt is a fast and efficient open source network fetcher java class for Android which is use to make HTTP/HTTPS 
-calls very easy. It accept URL as only parameter and return raw data in __String.
+calls very easy. It accept URL as only parameter and return raw data in __String__.
 
-**1.Use to make API calls.
+**1.Use to make API calls.**
 
-**2.Able to fetch JSON data efficiently.
+**2.Able to fetch JSON data efficiently.**
 
-**3.Easy to use with web crawling.
+**3.Easy to use with web crawling.**
 
-**4.Able to make network call on slow internet connection.
+**4.Able to make network call on slow internet connection.**
 
-**5.Conditions of \n and \r or " " is taken care of efficiently.
+**5.Conditions of \n and \r or " " is taken care of efficiently.**
 
 
 
@@ -40,7 +40,7 @@ STEP 2. Add the dependency (App Level)
 
 
 
-__USAGE:
+__USAGE__:
 
 Is can be using in saperate thread to make networking calls, i.e other than Main thread (UI thread).
 
