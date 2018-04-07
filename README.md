@@ -1,32 +1,33 @@
 # NetworkUtil-lib
 
 NetworkUilt is a fast and efficient open source network fetcher java class for Android which is use to make HTTP/HTTPS 
-calls very easy. It returns the raw data after making call by providing the correct URL.
+calls very easy. It accept URL as only parameter and return raw data in __String.
 
-1.Use to make API calls .
+**1.Use to make API calls.
 
-2.Able to fetch JSON data efficiently.
+**2.Able to fetch JSON data efficiently.
 
-3.Easy to use with web crawling.
+**3.Easy to use with web crawling.
 
-4.Able to make network call on slow internet connection.
+**4.Able to make network call on slow internet connection.
 
-5.Conditions of \n and \r or " " is taken care of efficiently.
+**5.Conditions of \n and \r or " " is taken care of efficiently.
 
 
-### How to add this to your project? ###
+
+## How to add this to your project?
 
 STEP 1. Add the JitPack repository to your build file (Project Level)
 
-
+```
   allprojects {
   
     repositories {
 		  ...
 		  maven { url 'https://jitpack.io' }
 	  }
-    
   }
+```
 
 
 
@@ -39,12 +40,23 @@ STEP 2. Add the dependency (App Level)
 
 
 
-USAGE: 
-  When ever you make the call to NetworkUtil class try to make it off the main theread.
-  TO GET THE RESULT FROM URL CALL THE BELOW LINE IN "doInBackground()" in case if you are using AsyncTask.
-  
-  
-      String resultData = NetworkUtil.makeServiceCall(myUrl);
-  
-  
- pass your url as (myUrl) in string format and fetched data will be in staring format (resultData).
+__USAGE:
+
+Is can be using in saperate thread to make networking calls, i.e other than Main thread (UI thread).
+
+Simple exmaple on usage:-
+```
+public class Fetch extends AsyncTask<Void, Void, Void>{
+	@Override
+	public String doInBackground(String args...){
+		String URL = args[0];
+		
+		String resultData = NetworkUtil.makeServiceCall(URL);
+		
+		return resultData;
+		
+	}
+}
+```
+
+Its not that hard as it looks. You need to call *new Fetch().execute(myUrl)* and in 'doInBackground'  __*NetworkUtil.makeServiceCall(myUrl)*__ will fetch you data.
