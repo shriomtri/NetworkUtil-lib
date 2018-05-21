@@ -1,3 +1,5 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Shriom%20Tripathi-green.svg?style=flat )]
+
 # NetworkUtil-lib
 
 NetworkUilt is a fast and efficient open source network fetcher java class for Android which is use to make HTTP/HTTPS 
