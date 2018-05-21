@@ -1,4 +1,4 @@
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Shriom%20Tripathi-green.svg?style=flat )]
+![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Shriom%20Tripathi-green.svg?style=flat )
 
 # NetworkUtil-lib
 
