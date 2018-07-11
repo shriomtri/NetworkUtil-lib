@@ -36,7 +36,7 @@ STEP 1. Add the JitPack repository to your build file (Project Level)
 STEP 2. Add the dependency (App Level)
 
 	dependencies {
-	        compile 'com.github.jay006:NetworkUtil-lib:v0.2.0'
+	        implementation 'com.github.jay006:NetworkUtil-lib:v0.2.0'
 	}
   
 
