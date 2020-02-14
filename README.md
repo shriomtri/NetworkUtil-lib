@@ -59,4 +59,6 @@ public class Fetch extends AsyncTask<Void, Void, Void>{
 }
 ```
 
-Its not that hard as it looks. You need to call *new Fetch().execute(myUrl)* and in 'doInBackground'  __*NetworkUtil.makeServiceCall(myUrl)*__ will fetch you data.
+Its not that hard as it looks. 
+You need to call ```new Fetch().execute(myUrl)``` and in 
+'doInBackground'  __*NetworkUtil.makeServiceCall(myUrl)*__  will fetch you data.
