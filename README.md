@@ -50,11 +50,9 @@ Simple exmaple on usage:-
 ```
 public class Fetch extends AsyncTask<Void, Void, Void>{
 	@Override
-	public String doInBackground(String args...){
+	public String doInBackground(String... args){
 		String URL = args[0];
-		
 		String resultData = NetworkUtil.makeServiceCall(URL);
-		
 		return resultData;
 		
 	}
